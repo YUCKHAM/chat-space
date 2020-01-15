@@ -24,8 +24,8 @@
 |group_id|integer|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :users
-- belongs_to :groups
+- belongs_to :user
+- belongs_to :group
 
 
 ## Groupsテーブル
@@ -36,7 +36,7 @@
 |group_id|integer|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :messages
+- has_many :messages
 - has_many :users_groups
 - has_many :users, through: :users_groups
 
@@ -48,5 +48,5 @@
 |group_id|integer|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :groups
-- belongs_to :users
+- belongs_to :group
+- belongs_to :user
