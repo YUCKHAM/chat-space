@@ -6,7 +6,7 @@
 |------|----|-------|
 |username|string|null: false|
 |email|string|null: false, unique: true|
-|pwassword|string|
+|pwassword|string|null: false|
 
 ### Association
 - has_many :messages
