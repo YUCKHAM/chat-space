@@ -1,7 +1,7 @@
 .side-bar {
   width: 300px;
   background-color: #2f3e51;
-  &__username {
+  &__user-name {
     height: 100px;
     background-color: #253141;
     display: flex;
@@ -33,13 +33,13 @@
   &__group-list {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
-    color: $white_color;
-    &--name {
+    .group {
       padding: 20px 20px 5px 20px;
-    }
-    &--message {
       font-size: 11px;
       margin: 0 20px 0;
+      a {
+        color: $white_color;
+      }
     }
   }
 }
